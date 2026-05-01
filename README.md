@@ -28,7 +28,7 @@ SQLAlchemy
 ### 1. Clone
 ```bash
 git clone https://github.com/Gajanand4252/QF-Admin-Portal.git
-QF-Admin-Portal
+cd QF-Admin-Portal
 ```
 
 ### 2. Install dependencies
