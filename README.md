@@ -1,125 +1,82 @@
 # QF-Admin-Portal
 
-Admin Dashboard Backend (Flask + MySQL)
+# Admin Dashboard Backend (Flask + MySQL)
 
-Project Overview
-This project is a Flask backend built to support a pre-existing Admin Dashboard UI.
-The main requirement was to implement backend functionality without changing the frontend.
-
-The system handles authentication and opportunity management with data stored in MySQL.
+## Overview
+Flask backend built to support a pre-existing Admin Dashboard UI without modifying the frontend.  
+Handles authentication and opportunity management with MySQL storage.
 
 ---
 
-Features
-
-Authentication
-
-* Signup
-* Login using session
-* Forgot password (mock)
-* Logout
-
-Opportunity Management
-
-* Create opportunity
-* Get all opportunities
-* Get single opportunity
-* Update opportunity
-* Delete opportunity
-
-Database
-
-* MySQL database
-* SQLAlchemy ORM
+## Features
+- Signup and login (session-based)
+- Forgot password (mock)
+- Logout
+- Create, view, update, delete opportunities
 
 ---
 
-Tech Stack
-Backend: Flask (Python)
-Database: MySQL
-ORM: SQLAlchemy
-Frontend: Provided UI (unchanged)
+## Tech Stack
+Flask  
+MySQL  
+SQLAlchemy  
 
 ---
 
-Project Structure
+## Setup
 
-project/
+### 1. Clone
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-app.py
-models.py
-config.py
-.env
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-static/
-admin.css
-admin.js
-
-templates/
-admin.html
-
----
-
-Setup Instructions
-
-1. Clone repository
-   git clone https://github.com/Gajanand4252/QF-Admin-Portal
-   
-   cd your-repo-name
-
-3. Create virtual environment
-   python -m venv venv
-   
-   venv\Scripts\activate
-
-4. Install dependencies
-   pip install flask flask_sqlalchemy pymysql python-dotenv
-
-5. Create .env file
-
+### 3. Configure environment
+Create `.env` file:
+```
 DB_USER=root
 DB_PASSWORD=yourpassword
 DB_HOST=localhost
 DB_NAME=certifyme
 SECRET_KEY=secret
+```
 
-5. Create MySQL database
-   CREATE DATABASE certifyme;
+### 4. Create database
+```sql
+CREATE DATABASE certifyme;
+```
 
-6. Run project
-   python app.py
+### 5. Run
+```bash
+python app.py
+```
 
-Open in browser
+Open:
 http://127.0.0.1:5000
 
 ---
 
-API Endpoints
+## API
 
-Authentication
-POST /signup
-POST /login
-POST /forgot-password
-POST /logout
+POST /signup  
+POST /login  
+POST /forgot-password  
+POST /logout  
 
-Opportunities
-GET /opportunity
-POST /opportunity
-GET /opportunity/<id>
-PUT /opportunity/<id>
-DELETE /opportunity/<id>
+GET /opportunity  
+POST /opportunity  
+GET /opportunity/<id>  
+PUT /opportunity/<id>  
+DELETE /opportunity/<id>  
 
 ---
 
-Important Notes
-Frontend UI was not modified
-Session-based authentication used for compatibility
-Backend integrates directly with existing JavaScript
-
----
-
-Final Status
-Backend completed
-Database connected
+## Notes
+Frontend UI was not modified.
 UI integrated
 Ready for submission
