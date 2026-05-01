@@ -63,7 +63,7 @@ admin.html
 Setup Instructions
 
 1. Clone repository
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Gajanand4252/QF-Admin-Portal
    cd your-repo-name
 
 2. Create virtual environment
