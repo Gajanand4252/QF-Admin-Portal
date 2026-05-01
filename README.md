@@ -27,7 +27,7 @@ SQLAlchemy
 
 ### 1. Clone
 ```bash
-git clone https://github.com/Gajanand4252/QF-Admin-Portal
+git clone https://github.com/Gajanand4252/QF-Admin-Portal.git
 QF-Admin-Portal
 ```
 
