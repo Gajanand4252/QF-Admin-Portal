@@ -78,5 +78,3 @@ DELETE /opportunity/<id>
 
 ## Notes
 Frontend UI was not modified.
-UI integrated
-Ready for submission
