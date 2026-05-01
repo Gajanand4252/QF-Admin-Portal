@@ -64,16 +64,18 @@ Setup Instructions
 
 1. Clone repository
    git clone https://github.com/Gajanand4252/QF-Admin-Portal
+   
    cd your-repo-name
 
-2. Create virtual environment
+3. Create virtual environment
    python -m venv venv
+   
    venv\Scripts\activate
 
-3. Install dependencies
+4. Install dependencies
    pip install flask flask_sqlalchemy pymysql python-dotenv
 
-4. Create .env file
+5. Create .env file
 
 DB_USER=root
 DB_PASSWORD=yourpassword
